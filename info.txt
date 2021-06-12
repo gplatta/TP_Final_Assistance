@@ -1,0 +1,105 @@
+>>>>>>>>>>>>
+< Archivos >
+<<<<<<<<<<<<
+
+**************
+* Course.txt *
+**************
+
+-> Refleja los atributos de la clase Course
+-> Se pueden realizar altas, bajas o modificaciones a través de los métodos
+   de la clase CourseMapper
+-> Contiene la información de cada materia, que se deberá recurrir a él en
+   caso de necesitar el código o el nombre de una o varias materias
+
+-----------------------------------------------
+- id(materia)  |       Nombre Materia         -
+-----------------------------------------------
+        01         Nombre de la Materia 1
+        02         Nombre de la Materia 2
+        03         Nombre de la Materia 3
+        04         Nombre de la Materia 4
+        .             .
+        .             .
+        NN         Nombre de la Materia N
+-----------------------------------------------
+ 
+
+
+***************
+* Student.txt *
+***************
+
+-> Refleja los atributos de la clase Student
+-> Se pueden realizar altas, bajas o modificaciones a través de los métodos
+   de la clase StudentMapper
+-> Contiene la información de cada estudiante, que se deberá recurrir a él
+   en case de necesitar el código o el nombre y apellido del estudiante o
+   estudiantes
+-> El campo nombre y el campo apellido están delimitados por el separador "|"
+
+----------------------------------------------------------------
+- id(estudiante) |        Apellido        |       nombre       -
+----------------------------------------------------------------
+       001         Apellido Estudiante 1  | Nombre Estudiante 1 
+       002         Aprllido Estudiante 2  | Nombre Estudiante 2   
+       003         Apellido Estudiante 3  | Nombre Estudiante 3
+       004         Apellido Estudiante 4  | Nombre Estudiante 4
+        .             .                        .    
+        .             .                        .
+       NNN         Apellido Estudiante N  | Nombre Estudiante N
+----------------------------------------------------------------
+
+
+
+**********************
+* StudentXCourse.txt *
+**********************
+
+-> Se pueden realizar altas, bajas o modificaciones a través de los métodos
+   de la clase StudentXCourseManager
+-> Contiene los estudiantes que hay en cada materia, utilizando los id de
+   Student.txt y Course.txt respectivamente
+
+
+------------------------------------
+-  id(materia)  |  id(estudiante)  -
+------------------------------------
+        01              001
+        03              001
+        05              001
+        01              002  
+        04              002
+        .                .
+        .                .
+        NN              NNN
+------------------------------------
+
+
+******************
+* Assistance.txt *
+******************
+
+----------------------------------------------------------------------
+-   fecha   |  id(materia)  |  id(estudiante)  |  Presente / Ausente -
+----------------------------------------------------------------------
+    
+ 2021/04/21         01              001                  1
+ 2021/04/21         01              002                  0 
+     .              .                .                   .
+     .              .                .                   .
+ 2021/04/21         05              001                  1
+ 2021/04/21         05              002                  1
+     .              .                .                   .  
+     .              .                .                   .
+ 2021/04/28         01              001                  0
+ 2021/04/28         01              002                  1
+     .              .                .                   .
+     .              .                .                   .
+----------------------------------------------------------------------
+
+-> Archivo de salida que genera el método takeAttendance de la clase 
+   AssistanceManager, dado el parámetro de entrada (fecha) del método, y 
+   los presentes o ausentes de cada alumno ingresado por teclado se va
+   a guardar al final del archivo la fecha, identificador de la materia,
+   identificador del estudiante, y el presente (1) o ausente(0)

@@ -1,0 +1,16 @@
+1 Practicas Profesionalizantes I
+2 Ingles Tecnico I
+3 Analisis Matematico I
+4 Algebra
+5 Algoritmos y Estrcuturas de Datos I
+6 Ciencia Tecnologia y Sociedad
+7 Arquitectura de Computadoras I
+8 Sistemas y Organizaciones
+9 Practicas Profesionalizantes II
+10 Ingles Tecnico II
+11 Analisis Matematico II
+12 Estadistica
+13 Algoritmos y Estructura de Datos II
+14 Base de Datos
+15 Sistemas Operativos
+16 Ingenieria de Software I
